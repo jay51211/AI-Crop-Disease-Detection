@@ -60,7 +60,7 @@ DISEASE_INFO = {
 "prevention": "Crop rotation and residue management."
 },
 
-"Corn_(maize)___Common_rust": {
+"Corn_(maize)___Common_rust_": {
 "summary": "Common rust produces reddish-brown pustules on maize leaves.",
 "causes": "Puccinia sorghi fungus.",
 "treatment": "Use fungicides if needed.",
@@ -281,5 +281,16 @@ DISEASE_INFO = {
 }
 }
 
+
 def generate_disease_report(disease_name):
-    return DISEASE_INFO[disease_name]
+    disease_name = disease_name.strip()
+
+    if disease_name in DISEASE_INFO:
+        return DISEASE_INFO[disease_name]
+
+    # Try removing trailing underscore
+    clean_name = disease_name.rstrip("_")
+    if clean_name in DISEASE_INFO:
+        return DISEASE_INFO[clean_name]
+
+    return None

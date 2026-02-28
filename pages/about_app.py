@@ -1,5 +1,49 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="🌱  AI Crop Disease Detection",
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
+
+st.markdown("""
+<style>
+    [data-testid="stSidebar"] {
+        display: none;
+    }
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+html, body, [class*="css"]  {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main {
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+}
+
+.stButton>button {
+    background-color: #1f2937;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 45px;
+}
+
+.stButton>button:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("📘 About This Project")
 
 st.markdown("---")
