@@ -207,4 +207,8 @@ if uploaded_file:
             st.write(f"**Treatment:** {report['treatment']}")
             st.write(f"**Prevention:** {report['prevention']}")
         elif not report:
+<<<<<<< HEAD
             st.warning("No detailed information available.")
+=======
+            st.warning("No detailed information available.")
+>>>>>>> 8a149af4df3595b8ec32c9bc7f93a7cb3d91654c
