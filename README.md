@@ -3,9 +3,6 @@
 🔗 **Live Application:**  
 https://ai-crop-disease-detection-8ueyakayyktndwiwmfjoh2.streamlit.app/
 
-📂 **GitHub Repository:**  
-https://github.com/jay51211/AI-Crop-Disease-Detection
-
 ---
 
 ## 🚀 Project Overview
