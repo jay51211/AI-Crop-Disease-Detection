@@ -110,17 +110,28 @@ Total Classes: **38**
 
 ## 📁 Project Structure
 AI-Crop-Disease-Detection/
+
 │
 ├── app.py
+
 ├── models/
+
 │ └── plant_disease_model.pth
+
 ├── pages/
+
 │ ├── prediction.py
+
 │ ├── disease.py
+
 │ ├── about_app.py
+
 ├── images
+
 ├── requirements.txt
+
 ├── .gitignore
+
 └── README.md
 
 ---
