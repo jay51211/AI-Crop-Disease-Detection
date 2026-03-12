@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="AI Crop Disease Detection",
+    page_title="🌱 AI Crop Disease Detection",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
