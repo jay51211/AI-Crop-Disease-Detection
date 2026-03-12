@@ -1,59 +1,98 @@
 import streamlit as st
-import pandas as pd
 
 st.set_page_config(
-    page_title="🌱  AI Crop Disease Detection",
-    layout="centered",
+    page_title="🌾 AI Crop Disease Detection",
+    layout="wide",
     initial_sidebar_state="collapsed"
 )
 
 st.markdown("""
 <style>
-    [data-testid="stSidebar"] {
-        display: none;
-    }
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-</style>
-""", unsafe_allow_html=True)
 
-st.markdown("""
-<style>
+[data-testid="stSidebar"] {display:none;}
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
 
-html, body, [class*="css"]  {
-    font-family: 'Segoe UI', sans-serif;
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
 }
 
-.main {
-    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+.stApp{
+    background: linear-gradient(135deg,#e8f5e9,#f8fafc);
 }
 
-.stButton>button {
-    background-color: #1f2937;
+h1, h2, h3, h4, h5, h6 {
+    color: #14532d !important;
+}
+
+[data-testid="stMarkdownContainer"] h3 {
+    color: #14532d !important;
+}
+
+p {
+    color: #374151 !important;
+    font-size: 17px;
+}
+
+li {
+    color: #374151 !important;
+}
+
+.stButton>button{
+    background: linear-gradient(135deg,#166534,#22c55e);
     color: white;
+    border-radius: 12px;
+    height: 48px;
     font-weight: 600;
-    border-radius: 8px;
-    height: 45px;
+    border: none;
+    transition: 0.25s;
 }
 
-.stButton>button:hover {
-    background-color: #1b5e20;
-    color: white;
+.stButton>button:hover{
+    transform: translateY(-2px);
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🌱 AI Crop Disease Detection System")
-st.write("""
-Welcome to the AI-based crop disease detection app.
 
-""")
+st.markdown(
+"""
+<h1 style='text-align:center; color:#14532d;'>
+🌱 AI Crop Disease Detection System
+</h1>
+""",
+unsafe_allow_html=True
+)
 
-st.markdown("---")
+st.markdown(
+"""
+<div class="subtitle" style="
+text-align:center;
+font-size:20px;
+color:#374151;
+font-weight:500;
+margin-bottom:20px;
+">
+Detect plant diseases instantly using Artificial Intelligence
+</div>
+""",
+unsafe_allow_html=True
+)
 
-c1, c2, c3, c4, c5 = st.columns([2, 1.5, 2, 1.5, 2])
+st.markdown("<br>", unsafe_allow_html=True)
+
+
+c1, c2, c3, c4, c5 = st.columns([2,1.5,2,1.5,2])
 
 with c2:
     if st.button("🏠 Home", use_container_width=True):
@@ -67,58 +106,60 @@ with c4:
     if st.button("ℹ️ About", use_container_width=True):
         st.switch_page("pages/about_app.py")
 
-st.markdown("---")
+
+st.markdown("<hr>", unsafe_allow_html=True)
+
+
+st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.markdown("""
-### Welcome 👋  
+### Welcome 👋
 
 This application uses **Artificial Intelligence and Deep Learning** to help detect  
-**crop diseases from leaf images** quickly and accurately.
+**crop diseases from leaf images quickly and accurately.**
 
-Farmers, students, and researchers can upload an image of a crop leaf and instantly
-get:
-- 🧠 Disease prediction  
-- 📊 Confidence score  
-- 📋 Disease description  
-- 💊 Treatment and prevention tips  
+Farmers, students, and researchers can upload an image of a crop leaf and instantly receive:
 
----
+- 🧠 **Disease Prediction**
+- 📊 **Confidence Score**
+- 📋 **Disease Description**
+- 💊 **Treatment & Prevention Tips**
 """)
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+
+st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.markdown("""
-### 🚀 How to Use the App
-1. Go to the **Prediction** page  
-2. Upload a clear image of a crop leaf  
-3. Wait a few seconds for AI analysis  
-4. View disease details and recommendations  
+### 🚀 How to Use
 
----
+1️⃣ Go to the **Prediction** page  
+2️⃣ Upload a **clear crop leaf image**  
+3️⃣ Wait a few seconds for **AI analysis**  
+4️⃣ View the **disease result and treatment tips**
 """)
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+
+st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.markdown("""
 ### 🌾 Supported Crops
-- Apple
-- Blueberry
-- Cherry
-- Corn
-- Grape
-- Orange
-- Peach
-- Pepper
-- Potato
-- Raspberry
-- Soybean
-- Squash
-- Strawberry
-- Tomato
 
----
+Apple • Blueberry • Cherry • Corn • Grape  
+Orange • Peach • Pepper • Potato • Raspberry  
+Soybean • Squash • Strawberry • Tomato
 """)
 
-st.success("👉 Use the **Prediction** page from the navigation menu to get started!")
+st.markdown("</div>", unsafe_allow_html=True)
+
+
+st.success("👉 Use the **Prediction** page to start detecting crop diseases.")
 
 st.markdown("""
-### 🎯 Project Goal
-To support **smart agriculture** by providing an easy-to-use AI tool
-that helps identify plant diseases early and reduce crop losses.
-""")
+<div class="footer">
+🎯 Goal: Support smart agriculture using AI to detect plant diseases early and reduce crop loss.
+</div>
+""", unsafe_allow_html=True)
