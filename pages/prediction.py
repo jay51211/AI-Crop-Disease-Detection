@@ -15,34 +15,89 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    [data-testid="stSidebar"] {display: none;}
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-</style>
-""", unsafe_allow_html=True)
 
-st.markdown("""
-<style>
+[data-testid="stSidebar"] {display:none;}
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
 
-html, body, [class*="css"]  {
-    font-family: 'Segoe UI', sans-serif;
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
 }
 
-.main {
-    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+.stApp{
+    background: linear-gradient(135deg,#e8f5e9,#ffffff);
 }
 
-.stButton>button {
-    background-color: #1f2937;
-    color: white;
-    font-weight: 600;
-    border-radius: 8px;
-    height: 45px;
+.block-container{
+    max-width:1100px;
+    padding-top:2rem;
 }
 
-.stButton>button:hover {
-    background-color: #1b5e20;
-    color: white;
+h1{
+    color:#14532d !important;
+    font-weight:700 !important;
+    text-align:center;
+}
+
+h2, h3{
+    color:#14532d !important;
+    font-weight:600 !important;
+}
+
+p{
+    color:#374151 !important;
+    font-size:17px;
+    line-height:1.6;
+}
+
+li{
+    color:#374151 !important;
+    font-size:16px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:20px;
+    color:#374151 !important;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.stButton>button{
+    background: linear-gradient(135deg,#166534,#22c55e);
+    color:white;
+    border-radius:10px;
+    height:48px;
+    font-weight:600;
+    border:none;
+    transition:0.25s;
+}
+
+.stButton>button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-top:20px;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#e5e7eb;
+    margin:30px 0;
+}
+
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3{
+    color:#14532d !important;
 }
 
 </style>
