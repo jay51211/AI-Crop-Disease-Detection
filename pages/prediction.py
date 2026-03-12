@@ -201,7 +201,7 @@ model = load_model()
 
 
 transform = transforms.Compose([
-    transforms.Resize((256, 256)),   # Important: match notebook size
+    transforms.Resize((256, 256)),  
     transforms.ToTensor()
 ])
 
