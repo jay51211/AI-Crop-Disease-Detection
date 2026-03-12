@@ -159,7 +159,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.success("👉 Use the **Prediction** page to start detecting crop diseases.")
 
 st.markdown("""
-<div class="footer">
+<div class="footer" style="color:black">
 🎯 Goal: Support smart agriculture using AI to detect plant diseases early and reduce crop loss.
 </div>
 """, unsafe_allow_html=True)
