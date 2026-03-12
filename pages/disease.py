@@ -288,7 +288,6 @@ def generate_disease_report(disease_name):
     if disease_name in DISEASE_INFO:
         return DISEASE_INFO[disease_name]
 
-    # Try removing trailing underscore
     clean_name = disease_name.rstrip("_")
     if clean_name in DISEASE_INFO:
         return DISEASE_INFO[clean_name]
