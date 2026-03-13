@@ -243,6 +243,7 @@ if uploaded_file:
             """)
         else:
             st.markdown(f"""
+            ### Crop Name: {crop}
             ### 🦠 Possible Disease: {disease}
 
             This is an AI-generated prediction.
