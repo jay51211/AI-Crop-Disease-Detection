@@ -124,19 +124,17 @@ st.markdown("---")
 
 
 
-CLASS_NAMES = ['Tomato___Spider_mites Two-spotted_spider_mite', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)',
-               'Cherry_(including_sour)___Powdery_mildew', 'Apple___Black_rot', 'Apple___healthy',
-               'Grape___Esca_(Black_Measles)', 'Strawberry___Leaf_scorch', 'Corn_(maize)___Common_rust_',
-               'Apple___Apple_scab', 'Grape___healthy', 'Tomato___Leaf_Mold', 'Apple___Cedar_apple_rust',
-               'Peach___Bacterial_spot', 'Blueberry___healthy', 'Corn_(maize)___healthy',
-               'Tomato___Tomato_mosaic_virus', 'Strawberry___healthy', 'Orange___Haunglongbing_(Citrus_greening)',
-               'Peach___healthy', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Raspberry___healthy',
-               'Tomato___Late_blight', 'Potato___Early_blight', 'Pepper,_bell___Bacterial_spot', 'Grape___Black_rot',
-               'Corn_(maize)___Northern_Leaf_Blight', 'Squash___Powdery_mildew', 'Potato___Late_blight',
-               'Tomato___Target_Spot', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Soybean___healthy',
-               'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Cherry_(including_sour)___healthy', 'Pepper,_bell___healthy',
-               'Tomato___Septoria_leaf_spot', 'Potato___healthy', 'Tomato___healthy'
-               ]
+CLASS_NAMES = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 
+               'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy', 
+               'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot','Corn_(maize)___Common_rust_', 
+               'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy','Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 
+               'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)','Grape___healthy', 'Orange___Haunglongbing_(Citrus_greening)', 
+               'Peach___Bacterial_spot','Peach___healthy', 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 
+               'Potato___Early_blight','Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy', 
+               'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot', 
+               'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 
+               'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
+               'Tomato___Tomato_mosaic_virus','Tomato___healthy']
 
 
 
